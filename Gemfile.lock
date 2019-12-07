@@ -1,0 +1,26 @@
+PATH
+  remote: .
+  specs:
+    app (0.1.0)
+      zeitwerk
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    irb (1.1.0)
+      reline (>= 0.0.1)
+    rake (10.5.0)
+    reline (0.0.7)
+    zeitwerk (2.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  app!
+  bundler (~> 1.17)
+  irb
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.17.2
