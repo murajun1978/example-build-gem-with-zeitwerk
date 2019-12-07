@@ -5,3 +5,13 @@ RUN addgroup -g 1000 ruby \
     && apk add --no-cache git
 
 WORKDIR /home/app
+
+COPY Gemfile Gemfile.lock ./
+
+COPY app.gemspec ./
+
+RUN mkdir -p ./lib/app
+
+COPY ./lib/app/version.rb ./lib/app
+
+RUN bundle install
